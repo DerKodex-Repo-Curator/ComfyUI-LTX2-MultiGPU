@@ -27,6 +27,9 @@ The preview in the `Video Combine` node seems buggy but I've been able to right 
 | **LTXV2 Text Encoder Loader (MultiGPU)** | Loads Gemma 3 text encoder for LTXV2 |
 | **Latent Upscale Model Loader (MultiGPU)** | Loads latent upscale model for video upsampling |
 
+<img width="345" height="364" alt="image" src="https://github.com/user-attachments/assets/a92760b8-cf24-45b8-b7a3-845dd4af76ae" />
+<img width="361" height="119" alt="image" src="https://github.com/user-attachments/assets/3327c245-59e3-46e2-8df1-aaf9dadd4bb0" />
+
 ## Installation
 
 Clone or copy this folder to your ComfyUI `custom_nodes` directory:
