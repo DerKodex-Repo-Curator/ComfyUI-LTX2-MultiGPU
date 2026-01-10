@@ -37,7 +37,6 @@ Clone or copy this folder to your ComfyUI `custom_nodes` directory:
 ```
 cd ComfyUI/custom_nodes/
 git clone https://github.com/dreamfast/ComfyUI-LTX2-MultiGPU
-pip install -r requirements.txt
 ```
 
 Restart ComfyUI.
@@ -54,6 +53,19 @@ Each node has a `device` dropdown that lets you select which GPU to load the mod
 
 - ComfyUI with LTXV2 support (built-in `LTXVAudioVAELoader`, `LTXAVTextEncoderLoader` nodes)
 - PyTorch with CUDA support (for multi-GPU)
+
+No `requirements.txt` is needed - this package only uses dependencies already included with ComfyUI (torch, comfy.model_management, standard library).
+
+## Compatibility with ComfyUI-MultiGPU
+
+This package is designed to work alongside [ComfyUI-MultiGPU](https://github.com/pollockjj/ComfyUI-MultiGPU) without conflicts:
+
+- **If ComfyUI-MultiGPU is installed**: Uses its device management infrastructure (no duplicate patches)
+- **If standalone**: Applies its own patches to `comfy.model_management`
+
+You can use both packages together - check the ComfyUI logs on startup for:
+- `[LTXV2 MultiGPU] ComfyUI-MultiGPU detected, using its device management`
+- `[LTXV2 MultiGPU] Running in standalone mode`
 
 ## License
 

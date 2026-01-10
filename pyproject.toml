@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-ltx2-multigpu"
+description = "Multi-GPU device selection for LTXV2 video generation in ComfyUI"
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/dreamfast/ComfyUI-LTX2-MultiGPU"
+
+[tool.comfy]
+PublisherId = "dreamfast"
+DisplayName = "ComfyUI-LTX2-MultiGPU"
